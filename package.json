@@ -5,6 +5,13 @@
   "repository": "git@github.com:gregoryjvrusso/goverage-dashboard.git",
   "author": "Gregory Russo <gregory.russo@luizalabs.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export -o build/",
+    "start": "next start",
+    "storybook": "start-storybook -s ./public -p 6006",
+    "build-storybook": "build-storybook"
+  },
   "devDependencies": {
     "@babel/core": "^7.10.4",
     "@storybook/addon-viewport": "^5.3.19",
