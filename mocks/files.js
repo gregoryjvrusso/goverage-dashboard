@@ -1,0 +1,51 @@
+export default [
+  {
+    name: "goverage-test-crud/cmd/crud/main.go",
+    lines: 35,
+    green: 9,
+    red: 26,
+    coverage: 25.714285,
+  },
+  {
+    name: "goverage-test-crud/internal/pkg/api/controllers/healthz/index.go",
+    lines: 3,
+    green: 3,
+    red: 0,
+    coverage: 100,
+  },
+  {
+    name: "goverage-test-crud/internal/pkg/api/controllers/users/create.go",
+    lines: 28,
+    green: 0,
+    red: 28,
+    coverage: 0,
+  },
+  {
+    name: "goverage-test-crud/internal/pkg/api/controllers/users/delete.go",
+    lines: 13,
+    green: 0,
+    red: 13,
+    coverage: 0,
+  },
+  {
+    name: "goverage-test-crud/internal/pkg/api/controllers/users/index.go",
+    lines: 42,
+    green: 13,
+    red: 29,
+    coverage: 30.952381,
+  },
+  {
+    name: "goverage-test-crud/internal/pkg/api/routers/routers.go",
+    lines: 9,
+    green: 9,
+    red: 0,
+    coverage: 100,
+  },
+  {
+    name: "goverage-test-crud/pkg/database/connector.go",
+    lines: 9,
+    green: 6,
+    red: 3,
+    coverage: 66.666664,
+  },
+];
