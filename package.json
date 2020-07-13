@@ -1,0 +1,22 @@
+{
+  "name": "goverage-dashboard",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:gregoryjvrusso/goverage-dashboard.git",
+  "author": "Gregory Russo <gregory.russo@luizalabs.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@storybook/addon-viewport": "^5.3.19",
+    "@storybook/react": "^5.3.19",
+    "babel-loader": "^8.1.0"
+  },
+  "dependencies": {
+    "next": "^9.4.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.1.1",
+    "styled-system": "^5.1.5",
+    "styled-tools": "^1.7.2"
+  }
+}
