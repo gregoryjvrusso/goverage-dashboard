@@ -16,7 +16,8 @@
     "@babel/core": "^7.10.4",
     "@storybook/addon-viewport": "^5.3.19",
     "@storybook/react": "^5.3.19",
-    "babel-loader": "^8.1.0"
+    "babel-loader": "^8.1.0",
+    "storybook-addon-styled-component-theme": "^1.3.0"
   },
   "dependencies": {
     "next": "^9.4.4",

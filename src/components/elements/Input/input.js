@@ -1,4 +1,5 @@
 import React from "react";
+import { theme } from "styled-tools";
 import styled from "styled-components";
 import Flex from "../Flex";
 import { Search } from "../Icon";
@@ -10,14 +11,14 @@ const Container = styled(Flex)`
   align-items: center;
 
   :focus-within {
-    border-bottom: solid 1px blue;
+    border-bottom: solid 1px ${theme(`colors.texts.searchClick`)};
 
     & > svg > path {
-      stroke: blue;
+      stroke: ${theme(`colors.texts.searchClick`)};
     }
 
     & > svg > .focusFill {
-      fill: blue;
+      fill: ${theme(`colors.texts.searchClick`)};
     }
   }
 `;

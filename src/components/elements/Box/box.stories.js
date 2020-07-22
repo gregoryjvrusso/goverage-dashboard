@@ -4,11 +4,9 @@ import Box from "../Box";
 
 storiesOf("Elements/Box", module)
   .add("default", () => (
-    <div>
-      <Box bg="tomato" p={10} color="#fff">
-        Box
-      </Box>
-    </div>
+    <Box bg="tomato" p={10} color="#fff">
+      Box
+    </Box>
   ))
   .add("width 50%", () => (
     <div>
