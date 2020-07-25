@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { theme } from "styled-tools";
 import styled from "styled-components";
 import Table from "../../elements/Table";
 import Box from "../../elements/Box";
@@ -6,8 +7,8 @@ import Flex from "../../elements/Flex";
 import Input from "../../elements/Input";
 
 const Container = styled(Box)`
-  background: #282a36;
-  color: white;
+  background: ${theme('colors.backgrounds.base')};
+  color: ${theme('colors.texts.base')};
   margin: 20px 10px;
 `;
 

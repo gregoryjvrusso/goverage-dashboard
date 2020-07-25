@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { theme } from "styled-tools";
 import styled from "styled-components";
 import TableSearch from "../modules/TableSearch";
 import Card from "../modules/Card";
@@ -7,7 +8,7 @@ import Box from "../elements/Box";
 import { codes, files } from "../../../mocks";
 
 const Container = styled(Box)`
-  background: #21222c;
+  background: ${theme("colors.backgrounds.base")};
 `;
 
 const Goverage = () => {
@@ -16,7 +17,7 @@ const Goverage = () => {
   const openCode = (file) => {
     setCode(codes[file]);
   };
-  
+
   return (
     <Container>
       <TableSearch files={files} onClickLine={openCode} />

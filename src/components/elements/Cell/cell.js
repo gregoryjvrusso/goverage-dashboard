@@ -1,5 +1,6 @@
 import React from "react";
 import styled, { css } from "styled-components";
+import { theme } from "styled-tools";
 import { textAlign, width } from "styled-system";
 
 const Td = styled.td`
@@ -11,9 +12,15 @@ const Td = styled.td`
   ${textAlign};
   ${width};
 
-  ${(cov) => cov && css`
-    background: linear-gradient(90deg, ${cov.color} ${cov.percentage}%, transparent ${cov.percentage}%);
-  `};
+  ${(cov) =>
+    cov &&
+    css`
+      background: linear-gradient(
+        90deg,
+        ${theme(`colors.backgrounds.${cov.color}`)} ${cov.percentage}%,
+        transparent ${cov.percentage}%
+      );
+    `};
 `;
 
 const verificateCoverage = (coverage) => {
@@ -21,17 +28,17 @@ const verificateCoverage = (coverage) => {
 
   switch (true) {
     case coverage === 0:
-      return { percentage: 100, color: "#df3b00" };
+      return { percentage: 100, color: "warning" };
     case coverage > 0 && coverage < 30:
-      return { percentage: coverage, color: "#df3b00" };
+      return { percentage: coverage, color: "warning" };
     case coverage >= 30 && coverage < 60:
-      return { percentage: coverage, color: "#df6800" };
+      return { percentage: coverage, color: "hideous" };
     case coverage >= 60 && coverage < 80:
-      return { percentage: coverage, color: "#df6f20" };
+      return { percentage: coverage, color: "attention" };
     case coverage >= 80 && coverage < 100:
-      return { percentage: coverage, color: "#84c14e" };
+      return { percentage: coverage, color: "moderate" };
     case coverage === 100:
-      return { percentage: coverage, color: "#77e11b" };
+      return { percentage: coverage, color: "success" };
   }
 };
 

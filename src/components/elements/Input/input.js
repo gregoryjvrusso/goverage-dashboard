@@ -5,10 +5,18 @@ import Flex from "../Flex";
 import { Search } from "../Icon";
 
 const Container = styled(Flex)`
-  color: #f8f8f2;
+  color: ${theme("colors.texts.base")};
   cursor: text;
-  border-bottom: solid 1px white;
+  border-bottom: solid 1px ${theme(`colors.texts.base`)};;
   align-items: center;
+
+  & > svg > path {
+    stroke: ${theme(`colors.texts.base`)};
+  }
+
+  & > svg > .focusFill {
+    fill: ${theme(`colors.texts.base`)};
+  }
 
   :focus-within {
     border-bottom: solid 1px ${theme(`colors.texts.searchClick`)};
@@ -24,7 +32,7 @@ const Container = styled(Flex)`
 `;
 
 const InputSelect = styled.input`
-  color: #f8f8f2;
+  color: ${theme("colors.texts.base")};
   background-color: transparent;
   border-style: none;
   flex: 1 1 auto;

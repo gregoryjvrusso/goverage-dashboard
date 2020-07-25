@@ -10,7 +10,7 @@ export default {
   fontFamily,
   colors: {
     texts: {
-      primary: "#FFFFFF",
+      base: "#f8f8f2",
       cellHover: "#b3b372",
       lineHover: "#44475a",
       searchClick: "#0b49bf",
@@ -19,12 +19,13 @@ export default {
       default: "#6272a4",
     },
     backgrounds: {
-      primary: "#21222c",
+      base: "#21222c",
       card: "#282a36",
       warning: "#df3b00",
+      hideous: "#df6800",
       attention: "#df6f20",
       moderate: "#84c14e",
-      success: "77e11b",
+      success: "#77e11b",
     },
   },
 };
