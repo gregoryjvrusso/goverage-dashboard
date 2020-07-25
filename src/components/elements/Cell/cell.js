@@ -46,7 +46,7 @@ const Cell = ({ children, coverage = null, ...props }) => {
   const cov = verificateCoverage(coverage);
   return (
     <Td {...cov} {...props}>
-      {children}
+      {coverage ? parseFloat(parseFloat(children)).toFixed(2) + "%" : children}
     </Td>
   );
 };

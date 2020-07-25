@@ -1,4 +1,5 @@
-export default {
+export default {CHANGE: "HERE"}
+/*{
   "goverage-test-crud/cmd/crud/main.go": {
     "full-name": "goverage-test-crud/cmd/crud/main.go",
     lines: [
@@ -1940,4 +1941,4 @@ export default {
       { line: 35, contents: [{ tracked: true, count: 2, content: "}" }] },
     ],
   },
-};
+};*/

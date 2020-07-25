@@ -5,13 +5,15 @@ import TableSearch from "../modules/TableSearch";
 import Card from "../modules/Card";
 import Box from "../elements/Box";
 
-import { codes, files } from "../../../mocks";
+//import { codes, files } from "../../../mocks";
 
 const Container = styled(Box)`
   background: ${theme("colors.backgrounds.base")};
 `;
 
 const Goverage = () => {
+  const codes = { REPLACE: "CODES" };
+  const files = [{ REPLACE: "FILES" }];
   const [code, setCode] = useState(undefined);
 
   const openCode = (file) => {

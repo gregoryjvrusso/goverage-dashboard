@@ -1,12 +1,12 @@
 import Head from "next/head";
 import { ThemeProvider } from "styled-components";
 import Goverage from "../components/preview/goverage";
-import theme from "../common/theme";
+import { dark } from "../common/theme/index";
 import { GlobalStyles } from "../common/globalStyles";
 
 const Home = () => {
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={dark}>
       <React.Fragment>
         <Head>
           <title>Goverage</title>
