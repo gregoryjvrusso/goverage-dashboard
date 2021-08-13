@@ -21,7 +21,7 @@
     "uglifyjs-webpack-plugin": "^2.2.0"
   },
   "dependencies": {
-    "next": "^9.4.4",
+    "next": "^11.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "styled-components": "^5.1.1",
